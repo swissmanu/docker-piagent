@@ -3,6 +3,8 @@ name: Publish Image
 on:
   push:
     branches: [main]
+permissions:
+  packages: write
 
 jobs:
   publish-image:

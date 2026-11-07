@@ -4,7 +4,7 @@ ARG PI_VERSION=1.3.0
 ARG PASEO_VERSION=0.15.3
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        bash ca-certificates curl dnsutils git iproute2 procps ripgrep \
+        bash ca-certificates curl dnsutils git iproute2 openssh-client procps ripgrep \
     && rm -rf /var/lib/apt/lists/* \
     && npm install --global --ignore-scripts \
         "@earendil-works/pi-coding-agent@${PI_VERSION}" \
